@@ -1,6 +1,10 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import {AiFillTwitterCircle,AiFillLinkedin,AiFillInstagram} from "react-icons/ai";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillInstagram,
+} from "react-icons/ai";
 import Image from "next/image";
 import kg from "../public/wave.png";
 import design from "../public/design.png";
@@ -30,7 +34,10 @@ export default function Home() {
             <h1 className=" text-xl font-mono">DevlopedbyKG</h1>
             <ul className=" flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={()=>setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-2xl"
+                />
               </li>
               <li>
                 <a
@@ -43,49 +50,55 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-2">
-            <h2 className=" text-5xl text-teal-600 font-medium md:text-6xl">Kunal G</h2>
+            <h2 className=" text-5xl text-teal-600 font-medium md:text-6xl">
+              Kunal G
+            </h2>
             <h3 className=" text-2xl py-2 md:text-3xl">Full Stack Devloper</h3>
             <p className=" text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
-              Hey guys it me your neighour developer Freelancer and Designer KG.
-              Feel free to join me down below
+              Hey guys it me your neighour Fronted Developer Freelancer and Designer KG,
+              Feel free to join me down below.
             </p>
           </div>
           <div className=" text-5xl flex justify-center gap-16 py-1 text-gray-700 cursor-pointer">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillInstagram />
+            <a href="https://twitter.com/kunal_g12" target="blank">
+              <AiFillTwitterCircle />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kunal-gursal-4159a81b4/"
+              target="blank"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a href="https://www.instagram.com/its_kunal_g/" target="blank">
+              <AiFillInstagram />
+            </a>
           </div>
           <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={kg} fill objectFit="cover" alt="profile_pic"/>
+            <Image src={kg} fill objectFit="cover" alt="profile_pic" />
           </div>
         </section>
         {/* Second section */}
         <section>
           <div>
-            <h3 className=" text-3xl">Services that I offer</h3>
-            <p className=" text-md py-2 leading-8 text-gray-800">
+            <h3 className=" text-3xl text-center py-7">Services that I offer</h3>
+            <p className=" text-md py-2 leading-8 text-gray-800 text-center">
               Since the beginning as a freelance does developer and Designer,
               I've done remote work for
               <span className=" text-teal-500"> Agencies </span>Collatbrated
               with talented people around the world
             </p>
-            <p>
+            <p className=" text-center">
               I offer from a wide range of services, including programming and
               teaching
             </p>
           </div>
           <div className=" lg:flex gap-10">
             <div className=" flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-white">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                alt='design'
-              />
+              <Image src={design} width={100} height={100} alt="design" />
               <h3 className=" text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
-              <p className="py-2">
+              <p className="py-2 text-center">
                 Creating elegant design suited for your needs design theory.
               </p>
               <h4 className=" py-4 text-teal-600">Design tools I use</h4>
@@ -99,37 +112,30 @@ export default function Home() {
                 src={consulting}
                 width={100}
                 height={100}
-                alt ='consulting'
+                alt="consulting"
               />
               <h3 className=" text-lg font-medium pt-8 pb-2">
                 Great consulting
               </h3>
-              <p className="py-2">
-                Creating elegant design suited for your needs design theory.
+              <p className="py-2 text-center">
+                Teaching you in best way of possible in simple manner.
               </p>
-              <h4 className=" py-4 text-teal-600">Design tools I use</h4>
-              <p className=" text-gray-800 py-1">Photoshop</p>
-              <p className=" text-gray-800 py-1">Illustartor</p>
-              <p className=" text-gray-800 py-1">Figma</p>
+              <h4 className=" py-4 text-teal-600">Teaching lang I used</h4>
+              <p className=" text-gray-800 py-1">Any fronted Framework </p>
+              <p className=" text-gray-800 py-1">Javascript</p>
+              <p className=" text-gray-800 py-1">html css</p>
             </div>
 
             <div className=" flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-white">
-              <Image
-                src={code}
-                width={100}
-                height={100}
-                alt = 'code'
-              />
-              <h3 className=" text-lg font-medium pt-8 pb-2">
-                Clean code
-              </h3>
-              <p className="py-2">
-                Creating elegant design suited for your needs design theory.
+              <Image src={code} width={100} height={100} alt="code" />
+              <h3 className=" text-lg font-medium pt-8 pb-2">Clean code</h3>
+              <p className="py-2 text-center">
+                Writing better code for your website and application.
               </p>
-              <h4 className=" py-4 text-teal-600">Design tools I use</h4>
-              <p className=" text-gray-800 py-1">Photoshop</p>
-              <p className=" text-gray-800 py-1">Illustartor</p>
-              <p className=" text-gray-800 py-1">Figma</p>
+              <h4 className=" py-4 text-teal-600">Fronted Devloper</h4>
+              <p className=" text-gray-800 py-1">React Js</p>
+              <p className=" text-gray-800 py-1">Tailwindcss</p>
+              <p className=" text-gray-800 py-1">Javascript</p>
             </div>
           </div>
         </section>
@@ -150,12 +156,66 @@ export default function Home() {
             </p>
           </div>
           <div className=" flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className=" basis-1/3 flex-1"><Image className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" src={web1} alt='design_img'/></div>
-            <div className=" basis-1/3 flex-1"><Image className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" src={web2} alt='design_img'/></div>
-            <div className=" basis-1/3 flex-1"><Image className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" src={web3} alt='design_img'/></div>
-            <div className=" basis-1/3 flex-1"><Image className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" src={web4} alt='design_img'/></div>
-            <div className=" basis-1/3 flex-1"><Image className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" src={web5} alt='design_img'/></div>
-            <div className=" basis-1/3 flex-1"><Image className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" src={web6} alt='design_img'/></div>
+            <div className=" basis-1/3 flex-1">
+              <Image
+                className=" rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web1}
+                alt="design_img"
+              />
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image
+                className=" rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web2}
+                alt="design_img"
+              />
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image
+                className=" rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web3}
+                alt="design_img"
+              />
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image
+                className=" rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web4}
+                alt="design_img"
+              />
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image
+                className=" rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web5}
+                alt="design_img"
+              />
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image
+                className=" rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web6}
+                alt="design_img"
+              />
+            </div>
           </div>
         </section>
       </main>
