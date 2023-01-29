@@ -93,7 +93,7 @@ export default function Home() {
             </p>
           </div>
           <div className=" lg:flex gap-10">
-            <div className=" flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className=" flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-white  hover:p">
               <Image src={design} width={100} height={100} alt="design" />
               <h3 className=" text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
