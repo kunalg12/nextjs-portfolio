@@ -55,8 +55,9 @@ export default function Home() {
             </h2>
             <h3 className=" text-2xl py-2 md:text-3xl">Full Stack Devloper</h3>
             <p className=" text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
-              Hey guys it me your neighour Fronted Developer Freelancer and Designer KG,
+              <article> Hey guys it me your neighour Fronted Developer Freelancer and Designer Kunal Gursal,
               Feel free to join me down below.
+              </article>
             </p>
           </div>
           <div className=" text-5xl flex justify-center gap-16 py-1 text-gray-700 cursor-pointer">
@@ -93,7 +94,7 @@ export default function Home() {
             </p>
           </div>
           <div className=" lg:flex gap-10">
-            <div className=" flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-white  hover:p">
+            <div className=" flex flex-col items-center shadow-lg p-10 rounded-xl dark:bg-white hover:ease-in duration-300">
               <Image src={design} width={100} height={100} alt="design" />
               <h3 className=" text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
@@ -161,7 +162,6 @@ export default function Home() {
                 className=" rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web1}
                 alt="design_img"
               />
@@ -171,7 +171,6 @@ export default function Home() {
                 className=" rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web2}
                 alt="design_img"
               />
@@ -181,7 +180,6 @@ export default function Home() {
                 className=" rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web3}
                 alt="design_img"
               />
@@ -191,7 +189,6 @@ export default function Home() {
                 className=" rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web4}
                 alt="design_img"
               />
@@ -201,7 +198,6 @@ export default function Home() {
                 className=" rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web5}
                 alt="design_img"
               />
@@ -211,7 +207,6 @@ export default function Home() {
                 className=" rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
-                layout="responsive"
                 src={web6}
                 alt="design_img"
               />
