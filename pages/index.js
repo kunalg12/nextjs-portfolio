@@ -55,7 +55,7 @@ export default function Home() {
             </h2>
             <h3 className=" text-2xl py-2 md:text-3xl">Full Stack Devloper</h3>
             <p className=" text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
-              <article> Hey guys it me your neighour Fronted Developer Freelancer Kunal Gursal,
+              <article> Hey guys it me your neighbour Fronted Developer & Freelancer Kunal Gursal,
               Feel free to join me down below.
               </article>
             </p>
