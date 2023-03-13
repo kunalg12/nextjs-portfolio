@@ -4,6 +4,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillInstagram,
+  AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
 import kg from "../public/wave.png";
@@ -55,9 +56,8 @@ export default function Home() {
             </h2>
             <h3 className=" text-2xl py-2 md:text-3xl">Full Stack Devloper</h3>
             <p className=" text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
-              <article> Hey guys it me your neighbour Fronted Developer & Freelancer Kunal Gursal,
+               Hey guys it me your neighbour Fronted Developer & Freelancer Kunal Gursal,
               Feel free to join me down below.
-              </article>
             </p>
           </div>
           <div className=" text-5xl flex justify-center gap-16 py-1 text-gray-700 cursor-pointer">
@@ -72,6 +72,9 @@ export default function Home() {
             </a>
             <a href="https://www.instagram.com/its_kunal_g/" target="blank">
               <AiFillInstagram />
+            </a>
+            <a href="https://github.com/kunalg12" target="blank">
+              <AiFillGithub />
             </a>
           </div>
           <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
